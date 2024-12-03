@@ -8,3 +8,8 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: online_retail_data
+  redis:
+    image: redis:6
+    container_name: redis
+    ports:
+      - "6379:6379"
